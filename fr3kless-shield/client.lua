@@ -27,7 +27,7 @@ local weapons = {
 -- anti native revive
 
 if Config.Options.antinativerevive == true then
-	AddEventHandler('playerSpawned', function()
+	AddEventHandler('playerSpawned', function(coords)
 		if coords == GetEntityCoords(PlayerPedId()) then
 			TriggerServerEvent('chujciwdupcieessa', 'Native Revive', 'Wykryto NATIVE Revive')
             -- TriggerServerEvent('banplejerjebanycwel', 'Wykryto NATIVE Revive')
